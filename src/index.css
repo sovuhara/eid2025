@@ -1,0 +1,605 @@
+/* Общие стили */
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  background: #fbf4e4;
+  color: #4d3327;
+}
+
+/* Заголовок */
+.header {
+  position: relative;
+  background: #fbf4e4;
+  color: #4d3327;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  padding-bottom: 0px;
+  align-items: center;
+}
+.fixed-button {
+  position: fixed;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #d4a373;
+  color: white;
+  padding: 15px 24px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 26px;
+  font-weight: bold;
+  width: 80%;
+  font-family: 'Courier New', Courier, monospace;
+  box-shadow: 0px 0px 10px rgba(87, 54, 17, 0.8); 
+
+}
+
+
+
+.moon-image {
+  position: absolute;
+  top: -20px;
+  height: 300px;
+  left: 60%;
+  object-fit: cover;
+  opacity: 0.85;
+}
+
+.header-content {
+  width: 90%;
+  text-align: left;
+  padding: 40px 20px;
+}
+
+.header-text {
+  text-align: left;
+  color: #800020;
+  font-size: 30px;
+  font-weight: 600;
+}
+
+#smallText {
+  font-size: 15px;
+  color: #4d3327;
+  text-align: left;
+  width: 55%;
+}
+
+.header-info {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 100%;
+
+}
+
+.containInfo {
+  margin-top: 5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-size: 12px;
+  width: 46%;
+  height: 160px;
+  background: linear-gradient(135deg, #d4a373, #b08968);
+  border-radius: 15px;
+
+  color: #fff;
+
+}
+
+#date {
+  text-decoration: underline;
+  font-weight: bold;
+  font-size: 16px;
+  color: #fbf4e4;
+}
+
+#bookingView {
+  width: 100%;
+  border: 0px solid #800020;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+
+  color: white;
+  background-color: rgba(138, 60, 60, 0.088);
+  margin-top: 15px;
+
+}
+input {
+  width: 90%;
+  max-width: 400px;
+  padding: 12px 15px;
+  margin: 10px 0;
+  font-size: 16px;
+  border: 2px solid #b08968;
+  border-radius: 10px;
+  background: #fbf4e4;
+  color: #4d3327;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+input::placeholder {
+  color: #8b6f57;
+  opacity: 0.8;
+}
+
+input:focus {
+  border-color: #800020;
+  box-shadow: 0 0 8px rgba(128, 0, 32, 0.5);
+}
+
+h1 {
+  margin: 0px;
+}
+
+#ticketsText {
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #474747;
+  font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+
+.bookButton {
+  margin-top: -6px;
+  padding: 10px 25px;
+  border: 1px solid #232323;
+  background: linear-gradient(135deg, #ffffff, #ffffff);
+  color: #3c3c3c;
+  font-size: 25px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 95%;
+}
+.scroll-container {
+  width: 100%;
+  overflow: hidden;
+  white-space: nowrap;
+  display: flex;
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+
+.scroll-content {
+  display: flex;
+  width: max-content;
+}
+
+.scroll-image {
+  width: 200px; /* Размер картинок */
+  height: 230px;
+  margin-right: 10px;
+  flex-shrink: 0;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.experience {
+
+  background: linear-gradient(135deg, #d4a373, #b08968);
+}
+.ticket-selection {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 15px;
+  padding: 0px 10px;
+  
+}
+
+.ticket-option {
+  padding: 10px 20px;
+  border: 2px solid #ddd;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+
+}
+
+.ticket-option.selected {
+  border-color: #0070ba;
+  background: #0070ba;
+  color: white;
+}
+.map{
+  margin-top: -10px;
+}
+.routeButton {
+  margin-top: -6px;
+  padding: 10px 25px;
+  background: linear-gradient(135deg, #d4a373, #b08968);
+  color: #ffffff;
+  font-size: 25px;
+  border-radius: 15px;
+  cursor: pointer;
+  transition: 0.3s ease;
+  width: 95%;
+  border: none;
+
+}
+
+.footer{
+  background-color: "#fbf4e4"
+}
+.event-details {
+  background-color: #fbf4e4;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+.experience {
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+}
+
+
+.tag {
+  background-color: white;
+  color: black;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  display: inline-block;
+}
+
+.tags-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.experience ul {
+  text-align: left;
+}
+
+.experience img {
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 20px;
+}
+
+.location {
+  margin-top: 50px;
+}
+
+.bottomMapEvents{
+  flex-direction: column;
+  width: 100%;
+}
+
+
+.languageButtonDiv {
+  position: absolute; /* Абсолютное позиционирование относительно .app */
+  top: 15px;
+  right: 15px; /* Теперь в правом верхнем углу .app */
+  background: rgba(255, 255, 255, 0.8); /* Легкий фон, чтобы не мешала */
+  padding: 5px 10px;
+  border-radius: 8px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  z-index: 999;
+}
+
+.languageButton {
+  padding: 8px 12px;
+  font-size: 16px;
+  font-weight: bold;
+  border: 2px solid #007bff;
+  border-radius: 8px;
+  background: white;
+  color: #007bff;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+}
+
+.languageButton:hover {
+  background: #007bff;
+  color: white;
+}
+
+.languageButton:focus {
+  box-shadow: 0 0 10px rgba(0, 123, 255, 0.6);
+}
+/* 🔹 АДАПТАЦИЯ ДЛЯ СУПЕР-МАЛЕНЬКИХ ЭКРАНОВ 🔹 */
+@media (max-width: 480px) {
+  .header {
+    padding: 0px;
+  }
+}
+
+
+/* 🔹 АДАПТАЦИЯ ДЛЯ ПЛАНШЕТОВ И ПК 🔹 */
+@media (min-width: 768px) {
+  body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+    background: #fbf4e4;
+    color: #4d3327;
+    flex-direction: row;
+    flex-wrap: wrap;
+    
+  }
+  .app{
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  
+  /* Заголовок */
+  .header {
+    position: relative;
+    background: #fbf4e4;
+    color: #4d3327;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    padding: 30px;
+    padding-bottom: 0px;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  
+  .moon-image {
+    position: absolute;
+    top: -20px;
+    height: 300px;
+    left: 60%;
+    object-fit: cover;
+    opacity: 0.85;
+  }
+  
+  .header-content {
+    width: 55%;
+    text-align: center;
+    padding: 90px 20px;
+  }
+  
+  .header-text {
+    text-align: center;
+    color: #800020;
+    font-size: 30px;
+    font-weight: 600;
+  }
+  
+  #smallText {
+    font-size: 15px;
+    color: #4d3327;
+    text-align: center;
+    width: 100%;
+  }
+  
+  .header-info {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 50%;
+  
+  }
+  
+  .containInfo {
+    margin-top: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 12px;
+    width: 46%;
+    height: 160px;
+    background: linear-gradient(135deg, #d4a373, #b08968);
+    border-radius: 15px;
+  
+    color: #fff;
+  
+  }
+  
+  #date {
+    text-decoration: underline;
+    font-weight: bold;
+    font-size: 16px;
+    color: #fbf4e4;
+  }
+  
+  #bookingView {
+    width: 50%;
+    border: 0px solid #800020;
+  
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+  
+    color: white;
+    background-color: rgba(138, 60, 60, 0.088);
+    margin-top: 15px;
+    border-radius: 10px;
+  
+  }
+  input {
+    width: 90%;
+    max-width: 400px;
+    padding: 12px 15px;
+    margin: 10px 0;
+    font-size: 16px;
+    border: 2px solid #b08968;
+    border-radius: 10px;
+    background: #fbf4e4;
+    color: #4d3327;
+    outline: none;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  input::placeholder {
+    color: #8b6f57;
+    opacity: 0.8;
+  }
+  
+  input:focus {
+    border-color: #800020;
+    box-shadow: 0 0 8px rgba(128, 0, 32, 0.5);
+  }
+  
+  h1 {
+    margin: 0px;
+  }
+  
+  #ticketsText {
+    font-weight: bold;
+    margin-bottom: 15px;
+    color: #474747;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  }
+  
+  .bookButton {
+    margin-top: -6px;
+    padding: 10px 25px;
+    border: 1px solid #232323;
+    background: linear-gradient(135deg, #ffffff, #ffffff);
+    color: #3c3c3c;
+    font-size: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 95%;
+  }
+  .scroll-container {
+    width: 100%;
+    overflow: hidden;
+    white-space: nowrap;
+    display: flex;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  
+  .scroll-content {
+    display: flex;
+    width: max-content;
+  }
+  
+  .scroll-image {
+    width: 250px; /* Размер картинок */
+    height: 280px;
+    margin-right: 10px;
+    flex-shrink: 0;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .experience {
+  
+    background: linear-gradient(135deg, #d4a373, #b08968);
+  }
+  .ticket-selection {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 15px;
+  }
+  
+  .ticket-option {
+    padding: 10px 20px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .ticket-option.selected {
+    border-color: #0070ba;
+    background: #0070ba;
+    color: white;
+  }
+  .map{
+    width: 45%;
+    padding-top: 30px;
+    height: 100%;
+
+  }
+  .routeButton {
+    margin-top: -6px;
+    padding: 10px 25px;
+    background: linear-gradient(135deg, #d4a373, #b08968);
+    color: #ffffff;
+    font-size: 25px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: 0.3s ease;
+    width: 95%;
+    border: none;
+  
+  }
+  
+  .footer{
+    background-color: "#fbf4e4"
+  }
+  .event-details {
+    background-color: #fbf4e4;
+    padding: 20px;
+    border-radius: 10px;
+    width: 45%;
+  }
+  
+  .experience {
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+  }
+  
+  .tag {
+    background-color: white;
+    color: black;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-weight: bold;
+    display: inline-block;
+  }
+  
+  .tags-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+  
+  .experience ul {
+    text-align: left;
+  }
+  
+  .experience img {
+    width: 100%;
+    border-radius: 10px;
+    margin-top: 20px;
+  }
+  
+  .location {
+    margin-top: 50px;
+    display: none;
+  }
+
+  .bottomMapEvents{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    flex-wrap: wrap;
+    align-items: top;
+    justify-content: space-evenly;
+    background-color: #b08968;
+    padding: 10px 0px;
+
+  }
+
+}
+

@@ -1,0 +1,28 @@
+.collage-container {
+    overflow: hidden;
+    white-space: nowrap;
+    width: 100%;
+    position: relative;
+  }
+  
+  .collage-track {
+    display: flex;
+    gap: 10px;
+    animation: scroll 15s linear infinite; /* Автоматическая прокрутка */
+  }
+  
+  .collage-image {
+    width: 300px; /* Размер картинок */
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px; /* Закругленные углы */
+  }
+  
+  @keyframes scroll {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-50%);
+    }
+  }
